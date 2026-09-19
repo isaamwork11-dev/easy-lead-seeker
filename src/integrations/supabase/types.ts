@@ -14,7 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      saved_leads: {
+        Row: {
+          address: string | null
+          business_name: string
+          category: string | null
+          contacted: boolean
+          created_at: string
+          has_website: boolean
+          id: string
+          lead_status: string
+          maps_url: string | null
+          notes: string | null
+          phone: string | null
+          place_id: string
+          rating: number | null
+          review_count: number
+          search_query: string | null
+          updated_at: string
+          user_id: string
+          website: string | null
+        }
+        Insert: {
+          address?: string | null
+          business_name: string
+          category?: string | null
+          contacted?: boolean
+          created_at?: string
+          has_website?: boolean
+          id?: string
+          lead_status?: string
+          maps_url?: string | null
+          notes?: string | null
+          phone?: string | null
+          place_id: string
+          rating?: number | null
+          review_count?: number
+          search_query?: string | null
+          updated_at?: string
+          user_id: string
+          website?: string | null
+        }
+        Update: {
+          address?: string | null
+          business_name?: string
+          category?: string | null
+          contacted?: boolean
+          created_at?: string
+          has_website?: boolean
+          id?: string
+          lead_status?: string
+          maps_url?: string | null
+          notes?: string | null
+          phone?: string | null
+          place_id?: string
+          rating?: number | null
+          review_count?: number
+          search_query?: string | null
+          updated_at?: string
+          user_id?: string
+          website?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
